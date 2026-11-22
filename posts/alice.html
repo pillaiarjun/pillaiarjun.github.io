@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <title>Alice</title>
+    </head>
+    <body>
+        <p><a href="../index.html">Home</a></p>
+        <h1>Alice</h1>
+        <p>November 21st, 2026 </p>
+        <p>My team and I built Alice at the Gemini 4 NYC Hackathon on November 21!</p>
+        <p>Alice is an AI stylist that you talk to on a video call. She curates outfits for special occasions from real products in real stores, and shows them in her own online boutique.</p>
+        <p>She has the ability to understand voice and the specific occasion a user is going to, and offers different features like mixing and matching brands, showing users in entire outfits, and generating the backdrop of what their venue might look like.</p>
+        <p>I was in charge of the front end. The function <code>registerPageActions</code> solves the problem of Alice living on a server while a user interacts with her via a browser. The webpage can't know when Alice will ask to change the contents of the page. So once, when the call connects, <code>registerPageActions</code> sets up listeners for the 18 different changes to the screen that Alice might ask for, like <code>showOutfits</code>, <code>highlight</code>, and <code>tryOnReady</code>. When Alice calls, for example, <code>showOutfits</code>, the browser tries to implement that change. If it cannot, the page catches its own error and tells Alice that the change to the webpage failed and gives her an error message. This allows Alice to continue the call and other parts of the user experience without crashing.</p>
+        <p>We were not able to finish buying within Alice in the hackathon timeframe. While we were able to give her the ability to fill a cart, she still redirects users to each store's own checkout page, because the two stores we tried required a step there.</p>
+        <p>Still, an awesome learning experience, and thank you to my teammates, Mike, Jing, and Soham, for making it a great time!</p>
+        <p>The code is public: <a href="https://github.com/mhalpert/alice-gemini-hackathon">https://github.com/mhalpert/alice-gemini-hackathon</a>.</p>
+    </body>
+</html>
